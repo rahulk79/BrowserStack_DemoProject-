@@ -1,0 +1,16 @@
+[INFO ] 2022-07-17 16:11:54.156 [main] userAction - Navigated to login page
+[INFO ] 2022-07-17 16:11:55.929 [main] userAction - User loggedin
+[INFO ] 2022-07-17 16:12:44.386 [main] userAction - Performing logging off
+[INFO ] 2022-07-17 16:12:56.123 [main] userAction - User is logged off
+[DEBUG] 2022-07-17 16:18:49.871 [main] userAction - Navigated to login page
+[DEBUG] 2022-07-17 16:18:51.754 [main] userAction - User loggedin
+[DEBUG] 2022-07-17 16:19:43.882 [main] userAction - Performing logging off
+[DEBUG] 2022-07-17 16:19:56.263 [main] userAction - User is logged off
+[DEBUG] 2022-07-17 16:25:59.981 [main] userAction - Navigated to login page
+[DEBUG] 2022-07-17 16:26:01.649 [main] userAction - User loggedin
+[DEBUG] 2022-07-17 16:26:45.164 [main] userAction - Performing logging off
+[DEBUG] 2022-07-17 16:26:50.318 [main] userAction - User is logged off
+[DEBUG] 2022-07-17 16:28:35.570 [main] userAction - Navigated to login page
+[DEBUG] 2022-07-17 16:28:37.006 [main] userAction - User loggedin
+[DEBUG] 2022-07-17 16:29:21.861 [main] userAction - Performing logging off
+[DEBUG] 2022-07-17 16:29:34.332 [main] userAction - User is logged off
