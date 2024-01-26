@@ -1,10 +1,10 @@
-package mtribesPageLibrary;
+package PageLibrary;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class mtribesLoginPage {
+public class saucelabdemo {
 	
 	private static WebElement element = null ;
 	
