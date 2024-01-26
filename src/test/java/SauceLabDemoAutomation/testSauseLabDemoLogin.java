@@ -18,12 +18,10 @@ import userActions.userAction;
 
 public class testSauseLabDemoLogin {
 	public static WebDriver driver ;
-
-	public static final String userName = "";
-	public static final String accessKey ="";
+    public static final String userName = "";
+	public static final String accessKey = "";
 	public static final String URL = "https://" + userName +":" + accessKey+ "@hub-cloud.browserstack.com/wd/hub ";
-	//public static Properties prop ;
-	//public static WebDriverWait webwait ;
+	
 	
 	
 	@BeforeTest
