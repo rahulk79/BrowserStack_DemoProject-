@@ -19,7 +19,7 @@ public class saucelabdemo {
 	}
 	
 	public static WebElement Click_SignIn (WebDriver driver) {
-		element = driver.findElement(By.xpath("//button[@id=\"login-button\"]"));
+		element = driver.findElement(By.xpath("//input[@id=\"login-button\"]"));
 		return element;
 	}
 	

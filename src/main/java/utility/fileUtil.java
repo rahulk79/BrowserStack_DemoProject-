@@ -15,7 +15,7 @@ public class fileUtil {
 	
 		propObj = new Properties(); 
 		projectpath = System.getProperty("user.dir");
-		filename = System.getProperty("Env")+"_config.properties";
+		filename = "QA_config.properties";
 		reader = new FileInputStream(projectpath+"/src/test/java/" + filename );
 		propObj.load(reader);
 		return propObj.getProperty(key);
