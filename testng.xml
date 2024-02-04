@@ -3,11 +3,15 @@
   
   <test name="Test">
 
-   <groups>  
-    <run>  
-      <include name=${userName}/>  
-    </run>  
-   </groups>  
+   <method-selectors>
+            <method-selector>
+                <script language="beanshell">
+                <![CDATA[whatGroup = System.getProperty("userName");
+                groups.containsKey(whatGroup);
+                ]]>
+                </script>
+            </method-selector>
+        </method-selectors> 
    
     <classes>
       <class name="SauceLabDemoAutomation.testSauseLabDemoLogin"/>  
