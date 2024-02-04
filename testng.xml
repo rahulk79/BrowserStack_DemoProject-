@@ -1,6 +1,14 @@
 
 <suite parallel="false" name="Suite">
+  
   <test name="Test">
+
+   <groups>  
+    <run>  
+      <include name=${userName}/>  
+    </run>  
+   </groups>  
+   
     <classes>
       <class name="SauceLabDemoAutomation.testSauseLabDemoLogin"/>  
     </classes>
