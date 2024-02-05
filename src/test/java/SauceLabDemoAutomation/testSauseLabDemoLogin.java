@@ -3,9 +3,7 @@ package SauceLabDemoAutomation;
 import java.io.IOException;
 
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +18,7 @@ public class testSauseLabDemoLogin {
 	@BeforeSuite(groups= {"User1","User2"})
 	public void setpage() throws IOException {
 		WebDriverManager.chromedriver().setup();
-		 ChromeOptions options = new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
          options.addArguments("--remote-allow-origins=*");
 		 options.addArguments("start-maximized");
          driver = new ChromeDriver(options);}

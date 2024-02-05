@@ -22,10 +22,10 @@ public class userAction {
 	public static WebDriverWait webwait = null ;
 	
 	public static void perfromLogin(WebDriver driver) throws IOException, InterruptedException {
-		webwait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		webwait = new WebDriverWait(driver, 10);
 		driver.get(fileUtil.readProperty("url"));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		webwait.until(ExpectedConditions.elementToBeClickable(saucelabdemo.UserName(driver))).sendKeys(fileUtil.readProperty("user_emailid"));
 		saucelabdemo.Password(driver).sendKeys(fileUtil.readProperty("password"));
 		saucelabdemo.Click_SignIn(driver).click();
@@ -34,10 +34,8 @@ public class userAction {
 	}
 
 	public static void verifyDoingERPLoginButton(WebDriver driver) throws InterruptedException {
-		webwait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		webwait = new WebDriverWait(driver, 10);
         driver.get("https://doingerp.com/");
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		webwait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@class='fre-login']"))));
 		Thread.sleep(5000);
 		System.out.println("User2 test passed");
