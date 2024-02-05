@@ -1,6 +1,18 @@
 
 <suite parallel="false" name="Suite">
+  
   <test name="Test">
+
+   <method-selectors>
+            <method-selector>
+                <script language="beanshell">
+                <![CDATA[whatGroup = System.getProperty("userName");
+                groups.containsKey(whatGroup);
+                ]]>
+                </script>
+            </method-selector>
+        </method-selectors> 
+   
     <classes>
       <class name="SauceLabDemoAutomation.testSauseLabDemoLogin"/>  
     </classes>
